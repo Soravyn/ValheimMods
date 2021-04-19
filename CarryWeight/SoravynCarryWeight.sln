@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarryWeight", "CarryWeight.csproj", "{BE7E1D91-890C-4FCB-911D-1A86C4EAEFBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE7E1D91-890C-4FCB-911D-1A86C4EAEFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7E1D91-890C-4FCB-911D-1A86C4EAEFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7E1D91-890C-4FCB-911D-1A86C4EAEFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7E1D91-890C-4FCB-911D-1A86C4EAEFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88A037EB-97C5-45B8-8E09-34F1B7564634}
+	EndGlobalSection
+EndGlobal
