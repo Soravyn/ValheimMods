@@ -8,7 +8,7 @@ using JotunnLib.Utils;
 
 namespace Soravyn.CarryWeight
 {
-    [BepInPlugin("soravyn.CarryWeight", "CarryWeight", "0.1.0")]
+    [BepInPlugin("soravyn.CarryWeight", "CarryWeight", "1.0.0")]
     [BepInDependency(JotunnLib.JotunnLib.ModGuid)]
     [BepInProcess("valheim.exe")]
     public class CarryWeight : BaseUnityPlugin
@@ -77,10 +77,10 @@ namespace Soravyn.CarryWeight
         [HarmonyPatch(typeof(Player), "GetMaxCarryWeight")]
         class MaxCarry_Patch
         {
-            static void Postfix(ref float __result, ref Player __instance)
+            static void Postfix(ref float __result, ref Player __instance, ref float ___m_maxCarryWeight)
             {
                 float cwSkill = __instance.GetSkills().GetSkillFactor(CWSkill) * 100;
-                __result = __result + (cwSkill * cwGainPerLevel.Value);
+                __result = __result + (Mathf.Floor(cwSkill) * cwGainPerLevel.Value);
             }
         }
     }
