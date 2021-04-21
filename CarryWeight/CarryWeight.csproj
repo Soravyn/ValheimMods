@@ -67,6 +67,9 @@
     <Compile Include="CarryWeight.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="weight_icon_32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy /Y "$(SolutionDir)\bin\release\$(TargetName).dll" "E:\SteamLibrary\steamapps\common\Valheim\BepInEx\scripts\$(TargetName).dll"</PostBuildEvent>
